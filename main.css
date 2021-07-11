@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar pane"
+        "footer footer";
+    grid-template-columns: 25px 1fr;
+    grid-template-rows: 25px 1fr 12px;
+    height: 99vh;
+}
+header{
+    grid-area: header;
+}
+#sidebar{
+    grid-area: sidebar;
+}
+#pane{
+    grid-area: pane;
+}
+footer{
+    grid-area: footer;
+}
+
+header p, #sidebar p, footer p{
+    margin: 0;
+    padding: 0;
+}
+
+#playerToken{
+    width: 50px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
